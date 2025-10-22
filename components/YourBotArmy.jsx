@@ -1,6 +1,5 @@
-
 import React from 'react'
-import BotCard from './BotCard.jsx'
+import BotCard from './Botcard'
 
 export default function YourBotArmy({ army, onRelease, onDischarge }){
   return (

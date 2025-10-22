@@ -1,6 +1,6 @@
-import React from "react";
-import BotCard from "./BotCard.jsx";
-import SortBar from "./SortBar.jsx";
+import React from 'react'
+import BotCard from './Botcard'
+import SortBar from './sortbar'
 
 export default function BotCollection({ bots, onShowSpecs, sortKey, onSortChange, classes, activeFilters, onToggleFilter }){
   return (

@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from 'react'
-import BotCollection from './components/BotCollection.jsx'
-import YourBotArmy from './components/YourBotArmy.jsx'
-import BotSpecs from './components/BotSpecs.jsx'
+ import React, { useEffect, useState } from 'react'
+import BotCollection from './components/BotCollection'
+import YourBotArmy from './components/YourBotArmy'
+import BotSpecs from './components/BotSpecs'
 
-// Read API base from Vite env variable VITE_API (e.g. http://localhost:3001)
-// Fallback to localhost:3001 which is our json-server
-const API_BASE = import.meta.env.VITE_API || 'http://localhost:3001'
+// Read API base from Vite env variable VITE_API (e.g. http://localhost:8001)
+// Fallback to localhost:8001 which is our json-server
+const API_BASE = import.meta.env.VITE_API || 'http://localhost:8001'
 const API = `${API_BASE.replace(/\/$/, '')}/bots`
+
 
 export default function App(){
   const [bots, setBots] = useState([])

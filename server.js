@@ -1,11 +1,10 @@
-import pkg from 'json-server'
-import cors from 'cors'
 
-const { create, router: _router, defaults } = pkg
-const server = create()
-const router = _router('db.json')
-const middlewares = defaults()
-const port = process.env.PORT || 3000
+import jsonServer from 'json-server';
+import cors from 'cors';
+const server = jsonServer.create();
+const router = jsonServer.router('db.json');
+const middlewares = jsonServer.defaults();
+const port = process.env.PORT || 8001;
 
 // Configure CORS specifically for your Netlify domain
 server.use(cors({
